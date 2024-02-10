@@ -1,0 +1,32 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Mon compte</h1>
+    </div>
+</div>
+<div class="container" >
+    <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="Doe"> <!--placeholder permet de remplir le champ pas un text exemple et value permet de definir des valeurs qui seront utilisée par une api qui récuperera les infos déja rentrée par le client-->
+        </div>
+        <div class="mb-3">
+            <label for="PrenomomInput" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="John"> <!--placeholder permet de remplir le champ pas un text exemple-->
+        </div>
+        <div class="mb-3">
+          <label for="AllergieInput" class="form-label">Allergies</label>
+          <input type="text" class="form-control" id="AllergieInput" placeholder="mos allergies (fruits de mer, arachides...)" value="Cacahuete"> <!--placeholder permet de remplir le champ pas un text exemple-->
+        </div>
+        <div class="mb-3">
+            <label for="NbconvivesInput" class="form-label">Nombre de convives habituel</label>
+            <input type="number" class="form-control" id="NbconvivesInput" placeholder="Combien êtes vous habituellement ?" value="4"> <!--placeholder permet de remplir le champ pas un text exemple-->
+          </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Modifier vos informations</button>
+            <button type="button" class="btn btn-danger">Supprimer mon compte</button>
+        </div>
+        <div class="text-center pt-4">
+            <a href="/editpassword">Modifier votre mot de pass</a>
+        </div>
+    </form>
+</div>
