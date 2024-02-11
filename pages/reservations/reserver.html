@@ -1,0 +1,62 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Ma Reservation</h1>
+    </div>
+</div>
+<!--on cré un formulaire-->
+<div class="container" >
+    <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="Doe"> <!--on rajoute disabled pour ne pas pouvoir modifier-->
+        </div>
+        <div class="mb-3">
+            <label for="PrenomomInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="John"> <!--on rajoute disabled pour ne pas pouvoir modifier-->
+        </div>
+        <div class="mb-3">
+          <label for="AllergieInput" class="form-label">Allergies</label>
+          <input type="text" class="form-control" id="AllergieInput" placeholder="mos allergies (fruits de mer, arachides...)" value="Cacahuete"> <!--placeholder permet de remplir le champ pas un text exemple-->
+        </div>
+        <div class="mb-3">
+            <label for="NbconvivesInput" class="form-label">Nombre de convives habituel</label>
+            <input type="number" class="form-control" id="NbconvivesInput" placeholder="Combien êtes vous habituellement ?" value="4"> <!--placeholder permet de remplir le champ pas un text exemple-->
+        </div>
+        <div class="mb-3">
+            <label for="DateInput" class="form-label">Date de réservation</label>
+            <input type="date" class="form-control" id="DateInput"> 
+        </div>
+          <!--on  rajoute un radio bouton bootstratp pour choisir le moment de la réservation midi ou soir-->
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Servicechoisi" id="Midi">
+                <label class="form-check-label" for="Midi">
+                    Midi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Servicechoisi" id="Soir" checked>
+                <label class="form-check-label" for="Soir">
+                    Soir
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Selectionner l'heure">
+                <option selected>Heure de réservation</option> <!-- astuce en utilsant shift+alt on peut selectionner plusieurs lignes-->
+                <option>19:30</option>
+                <option>19:45</option>
+                <option>20:00</option>
+                <option>20:15</option>
+                <option>19:30</option>
+                <option>20:45</option>
+                <option>21:00</option>
+              </select>
+        </div>
+        <!-- on  rajoute un select bootstrap pour choisir l'heure de la réservation. Il s'agit d'un menu deroulant-->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Réserver</button>
+            <button type="button" class="btn btn-danger">Annuler</button>
+        </div>
+    </form>
+</div>
