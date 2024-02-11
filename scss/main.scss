@@ -100,3 +100,11 @@ p{
 .form-label{
     color: $primary;
 }
+
+.allreservations{
+   a{
+        display: block; //pour un affichage non pas en ligne mais en block de chaque élément
+        color: black;
+        padding: 10px;
+    }
+}
