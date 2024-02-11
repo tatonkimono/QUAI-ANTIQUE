@@ -61,7 +61,8 @@ p{
 .image-card{
     position: relative;
     &:hover{
-        .titre-image{
+        .titre-image, 
+        .action-image-buttons{
             opacity: 1;
         }
         img{
@@ -78,6 +79,19 @@ p{
         top: 50%;   //permet de centrer un élément en posistion absolu
         left: 50%; //permet de centrer un élément en posistion absolu
         transform: translate(-50%, -50%); //le texte est centré par raport à sa première lettre avec top et left il faut le centrer sur son ensemble on le décale de 50% de sa taille vers la gauche et de 50% de sa taille vers le haut
+        opacity: 0;
+        transition: all 1s;//on ajoute une temps pour la transition lors du survol pour un meilleur effet
+    }
+
+    .action-image-buttons{
+        //ensuite on reprend ce qu'on a déja fait au dessus pour titre image pour que les bouttons se placent ausses de l'image on utilise l'inspecteur pour travailler sur la page et copier le code qu'on a ainsi généré et on apllique le hover en ajoutant action-image-buttons dans le image-card hover précédent
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
         opacity: 0;
         transition: all 1s;//on ajoute une temps pour la transition lors du survol pour un meilleur effet
     }
